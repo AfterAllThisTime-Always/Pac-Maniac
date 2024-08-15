@@ -28,6 +28,8 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
@@ -64,5 +66,122 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+/* .pacman {
+width: 200px; 
+height: 200px;
+position: relative;
+background: radial-gradient(circle, #FFF 20%, transparent 21%) 0 50% repeat-x;
+background-size: 30px 30px; 
+animation: movedots 0.5s linear infinite;
+
+&:before,
+&:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 100px solid yellow;
+  border-right-color: transparent;
+  border-radius: 100px;
+}
+
+&:before {
+  animation: pac1 0.25s infinite linear alternate;
+}
+
+&:after {
+  animation: pac2 0.25s infinite linear alternate;
+}
+}
+
+@keyframes pac1 {
+from {
+  transform: rotate(0);
+}
+to {
+  transform: rotate(45deg);
+}
+}
+
+@keyframes pac2 {
+from {
+  transform: rotate(0);
+}
+to {
+  transform: rotate(-45deg);
+}
+}
+
+@keyframes movedots {
+from {
+  background-position: 0 50%; 
+}
+to {
+  background-position: -120px 50%; 
+}
+} */
+
+
+.pacman {
+  width: 200px; 
+  height: 200px;
+  position: relative;
+  background: radial-gradient(circle, #FFF 20%, transparent 21%) 0 50% repeat-x;
+  background-size: 50px 50px; 
+  animation: movedots 0.5s linear infinite;
+}
+
+.pacman:before,
+.pacman:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 100px solid yellow;
+  border-right-color: transparent;
+  border-radius: 100px;
+}
+
+.pacman:before {
+  animation: pac1 0.25s infinite linear alternate;
+}
+
+.pacman:after {
+  animation: pac2 0.25s infinite linear alternate;
+}
+
+@keyframes pac1 {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes pac2 {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(-45deg);
+  }
+}
+
+@keyframes movedots {
+  from {
+    background-position: 0 50%;
+  }
+  to {
+    background-position: -150px 50%;
   }
 }
