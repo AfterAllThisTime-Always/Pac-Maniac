@@ -71,7 +71,7 @@ button:focus-visible {
 
 
 .pacman {
-  width: 100px; 
+  width: 150px; 
   height: 100px; 
   position: relative;
   background: radial-gradient(circle, #FFF 20%, transparent 21%) 0 50% repeat-x; 
